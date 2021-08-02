@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <meta name="description" content="Kenzie" />
+    <meta name="author" content="Kenzie" />
+    <meta name="keywords" content="Kenzie" />
+
+    <!-- Title Page-->
+    <title>How Nerdy Are You</title>
+
+    <!-- CSS-->
+    <link href="style.css" rel="stylesheet" media="all" />
+  </head>
+
+  <body>
+
+    <div id="startPage" style="display: block;">
+      <h1>How Nerdy Are You?</h1>
+      <h3>
+        Jeperody Edition
+      </h3>
+      <button onclick="startGame()">Start Game</button>
+    </div>
+    <div id= "gamePage" style="display: none;">
+      <h1>How Nerdy Are You?</h1>
+      <h3>
+        Jeperody Edition
+      </h3>
+      <p class="score">Total Points: <span class ="score-count"></span></p>
+      <h2 id= "category">Category: </h2>
+      
+      <h2 id= "correctAnswer" style="display: none;"> That's right!</h2>
+      <h2 id= "question">Question:  </h2>
+      <h2 id= "answer">Answer: <input type="text" id= "typedAnswer" placeholder="Type Answer Here"></h2>
+      <h2 id= "incorrectAnswer" style="display: none;">Ope.....game over, you lost. Hit the home button to start over!</h2>
+      <button onclick="gradeAnswer()">Submit</button>
+      <button onclick="startOver()">Home</button>
+
+    </div>
+    <script src="code.js"></script>
+  </body>
+</html>
